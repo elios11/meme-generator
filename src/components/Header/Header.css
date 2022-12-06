@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    padding: 1rem;
+
+}
+
+.header > img {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.header--title {
+    font-size: 1rem;
+    margin-right: auto;
+}
