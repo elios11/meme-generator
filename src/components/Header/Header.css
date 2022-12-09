@@ -4,8 +4,7 @@
     align-items: center;
     color: white;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-    padding: 1.6rem 1rem;
-
+    padding: 1.4rem 1rem;
 }
 
 .header > img {
@@ -20,4 +19,22 @@
 
 .header--subtitle {
     font-size: 0.8rem;
+}
+
+@media (min-width: 1000px) {
+    .header {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .header {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 3000px) {
+    .header {
+        padding: 2rem;
+    }
 }
