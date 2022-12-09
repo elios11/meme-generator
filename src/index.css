@@ -3,10 +3,43 @@
 }
 
 body {
+    font-size: 16px;
     font-family: "Karla", sans-serif;
     margin: 0;
 }
 
-h1, p {
+input, button {
+    font-family:inherit;
+}
+
+h1, h2, p {
     margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 2000px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 3000px) {
+    html {
+        font-size: 30px;
+    }
 }
