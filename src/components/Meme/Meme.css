@@ -2,7 +2,7 @@ main {
     padding: 2.5rem;
 }
 
-.meme-form {
+.meme {
     display: flex;
     flex-direction: column;
 }
@@ -13,7 +13,7 @@ main {
     margin-bottom: 2rem;
 }
 
-.meme-form--input {
+.meme--input {
     width: 100%;
     font-size: 0.8rem;
     height: 2.5rem;
@@ -22,17 +22,17 @@ main {
     border-radius: 4px;
 }
 
-.meme-form--input:first-of-type {
+.meme--input:first-of-type {
     margin-right: 5%;
 }
 
-.meme-form--input:focus {
+.meme--input:focus {
     outline: none;
     border-color: rgba(29, 42, 165, 0.342);
     box-shadow: 0 0 3px 3px rgba(29, 42, 165, 0.342);
 }
 
-.meme-form--button {
+.meme--button {
     width: 100%;
     font-size: 0.9rem;
     background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
@@ -47,19 +47,40 @@ main {
     background-color: darkmagenta;
 }
 
-.meme-form--button:hover {
+.meme--button:hover {
     background: linear-gradient(90.41deg, #9a2bbe 1.14%, #c31dfa 100%);
 }
 
+.meme--image {
+    margin-top: 2rem;
+    border-radius: 2px;
+    align-self: center;
+    width: 50%;
+}
+
+@media (max-width: 576px) {
+    .meme--image {
+        width: 100%;
+    }
+}
+
 @media (min-width: 1600px) {
-    .meme-form--input {
+    .meme--input {
         font-size: 1rem;
         height: 3rem;
+    }
+
+    .meme--image {
+        width: 40%
     }
 }
 
 @media (min-width: 3000px) {
-    .meme-form--input {
+    .meme--input {
         height: 3.5rem;
+    }
+
+    .meme--image {
+        width: 25%
     }
 }
