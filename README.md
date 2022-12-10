@@ -1,3 +1,3 @@
 # meme-generator
-### Random meme generator with chosen text.
-#### Made in React.
+
+#### Random meme generator with chosen bottom and top text, made in React.
