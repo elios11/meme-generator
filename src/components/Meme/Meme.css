@@ -2,18 +2,18 @@ main {
     padding: 2.5rem;
 }
 
-.meme {
+.form {
     display: flex;
     flex-direction: column;
 }
 
-.inputs-container {
+.form--inputs-container {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
 }
 
-.meme--input {
+.form--input {
     width: 100%;
     font-size: 0.8rem;
     height: 2.5rem;
@@ -22,17 +22,17 @@ main {
     border-radius: 4px;
 }
 
-.meme--input:first-of-type {
+.form--input:first-of-type {
     margin-right: 5%;
 }
 
-.meme--input:focus {
+.form--input:focus {
     outline: none;
     border-color: rgba(29, 42, 165, 0.342);
     box-shadow: 0 0 3px 3px rgba(29, 42, 165, 0.342);
 }
 
-.meme--button {
+.form--button {
     width: 100%;
     font-size: 0.9rem;
     background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
@@ -47,15 +47,54 @@ main {
     background-color: darkmagenta;
 }
 
-.meme--button:hover {
+.form--button:hover {
     background: linear-gradient(90.41deg, #9a2bbe 1.14%, #c31dfa 100%);
 }
 
-.meme--image {
+.meme {
     margin-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.meme--image {
     border-radius: 2px;
     align-self: center;
     width: 50%;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
 }
 
 @media (max-width: 576px) {
@@ -65,7 +104,7 @@ main {
 }
 
 @media (min-width: 1600px) {
-    .meme--input {
+    .form--input {
         font-size: 1rem;
         height: 3rem;
     }
@@ -76,7 +115,7 @@ main {
 }
 
 @media (min-width: 3000px) {
-    .meme--input {
+    .form--input {
         height: 3.5rem;
     }
 
